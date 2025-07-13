@@ -1,0 +1,40 @@
+# 의존성 패키지
+node_modules/
+
+# 환경 설정 파일 (민감한 정보 포함)
+config.js
+
+# 데이터 파일
+data/
+*.json
+
+# 로그 파일
+logs/
+*.log
+
+# 환경 변수 파일
+.env
+.env.local
+.env.production
+
+# 운영체제 관련 파일
+.DS_Store
+Thumbs.db
+
+# IDE 관련 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 임시 파일
+*.tmp
+*.temp
+
+# 백업 파일
+*.bak
+*.backup
+
+# 빌드 결과물
+dist/
+build/ 
