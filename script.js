@@ -72,23 +72,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // 이벤트 리스너 초기화
 function initializeEventListeners() {
-    // 신청 버튼 클릭
-    document.getElementById('orderBtn').addEventListener('click', function() {
-        openModal('orderModal');
-    });
-
-    // 탭 버튼 클릭
-    document.querySelectorAll('.tab-button').forEach(button => {
-        button.addEventListener('click', function() {
-            switchTab(this.dataset.tab);
+    // 지금 신청하기 버튼 - 페이지 내에서 상품 섹션으로 스크롤
+    const orderBtn = document.getElementById('orderBtn');
+    if (orderBtn) {
+        orderBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
         });
-    });
+    }
 
-    // 상품 선택 버튼 클릭
-    document.querySelectorAll('.select-btn').forEach(button => {
+    // 상품 선택 버튼 클릭 - order-now-btn 클래스 사용
+    document.querySelectorAll('.order-now-btn').forEach(button => {
         button.addEventListener('click', function() {
-            const productCard = this.closest('.product-card');
-            const productId = productCard.dataset.product;
+            const productId = this.dataset.product;
             selectProduct(productId);
         });
     });
@@ -127,22 +123,8 @@ function initializeEventListeners() {
     });
 }
 
-// 탭 전환
-function switchTab(tabId) {
-    // 모든 탭 버튼 비활성화
-    document.querySelectorAll('.tab-button').forEach(btn => {
-        btn.classList.remove('active');
-    });
-    
-    // 모든 탭 컨텐츠 숨기기
-    document.querySelectorAll('.tab-content').forEach(content => {
-        content.classList.remove('active');
-    });
-    
-    // 선택된 탭 활성화
-    document.querySelector(`[data-tab="${tabId}"]`).classList.add('active');
-    document.getElementById(tabId).classList.add('active');
-}
+// 페이지 내 상품 섹션에는 탭이 없으므로 이 함수는 사용되지 않음
+// 필요 시 나중에 사용 가능
 
 // 상품 선택
 function selectProduct(productId) {
@@ -156,8 +138,7 @@ function selectProduct(productId) {
     // 상품별 필드 설정
     setupFormFields(productId);
     
-    // 주문 정보 입력 모달 열기
-    closeModal('orderModal');
+    // 주문 정보 입력 모달 열기 (페이지 내 상품에서 바로 열기)
     openModal('orderFormModal');
 }
 
