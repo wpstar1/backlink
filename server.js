@@ -12,6 +12,19 @@ const app = express();
 // 미들웨어 설정
 app.use(cors());
 app.use(bodyParser.json());
+
+// sitemap.xml을 올바른 Content-Type으로 제공
+app.get('/sitemap.xml', (req, res) => {
+    res.set('Content-Type', 'application/xml');
+    res.sendFile(path.join(__dirname, 'sitemap.xml'));
+});
+
+// robots.txt를 올바른 Content-Type으로 제공
+app.get('/robots.txt', (req, res) => {
+    res.set('Content-Type', 'text/plain');
+    res.sendFile(path.join(__dirname, 'robots.txt'));
+});
+
 app.use(express.static('.'));
 
 // 데이터 저장 경로
