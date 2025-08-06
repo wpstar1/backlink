@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이트맵 | 백링크 신청 시스템</title>
+    <meta name="description" content="백링크 신청 시스템의 전체 페이지 구조와 서비스 안내">
+    <link rel="canonical" href="https://backlink-two.vercel.app/sitemap.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .sitemap-section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-icon {
+            font-size: 1.5rem;
+        }
+
+        .page-list {
+            list-style: none;
+        }
+
+        .page-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .page-item:hover {
+            background: #e3f2fd;
+            transform: translateX(5px);
+        }
+
+        .page-link {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .page-link:hover {
+            color: #667eea;
+        }
+
+        .page-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .priority-high { border-left-color: #e74c3c; }
+        .priority-medium { border-left-color: #f39c12; }
+        .priority-low { border-left-color: #95a5a6; }
+
+        .back-to-home {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .sitemap-section {
+                padding: 20px;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗺️ 사이트맵</h1>
+            <p>백링크 신청 시스템의 모든 페이지와 서비스를 한눈에 확인하세요</p>
+        </div>
+
+        <!-- 메인 서비스 페이지 -->
+        <div class="sitemap-section">
+            <h2 class="section-title">
+                <span class="section-icon">🏠</span>
+                메인 서비스
+            </h2>
+            <ul class="page-list">
+                <li class="page-item priority-high">
+                    <a href="/" class="page-link">홈페이지</a>
+                    <p class="page-description">구글상위노출 전문 백링크 신청 시스템 메인 페이지. 모든 서비스 소개와 신청 기능 제공</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 백링크 상품 카테고리 -->
+        <div class="sitemap-section">
+            <h2 class="section-title">
+                <span class="section-icon">🎯</span>
+                백링크 상품 카테고리
+            </h2>
+            <ul class="page-list">
+                <li class="page-item priority-high">
+                    <a href="/#products" class="page-link">전체 상품 보기</a>
+                    <p class="page-description">4가지 카테고리의 모든 백링크 상품을 한 페이지에서 확인</p>
+                </li>
+                <li class="page-item priority-high">
+                    <a href="/#profile-backlinks" class="page-link">프로필 백링크</a>
+                    <p class="page-description">DA80+ 권위 사이트 프로필 백링크 (60개/125개/240개 패키지)</p>
+                </li>
+                <li class="page-item priority-high">
+                    <a href="/#web20-backlinks" class="page-link">웹2.0 백링크</a>
+                    <p class="page-description">대량 도팔로우 백링크 서비스 (1,000개~5,000개 패키지)</p>
+                </li>
+                <li class="page-item priority-high">
+                    <a href="/#domain-authority" class="page-link">도메인 권한 상승</a>
+                    <p class="page-description">사이트 도메인 신뢰도 향상 서비스 (+30점~+50점)</p>
+                </li>
+                <li class="page-item priority-high">
+                    <a href="/#program-backlinks" class="page-link">프로그램 백링크</a>
+                    <p class="page-description">대량 백링크 자동화 서비스 (10,000개~70,000개)</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 관리 페이지 -->
+        <div class="sitemap-section">
+            <h2 class="section-title">
+                <span class="section-icon">⚙️</span>
+                관리 시스템
+            </h2>
+            <ul class="page-list">
+                <li class="page-item priority-low">
+                    <a href="/admin" class="page-link">관리자 페이지</a>
+                    <p class="page-description">주문 관리, 상태 업데이트, 고객 관리 (관리자 전용)</p>
+                </li>
+                <li class="page-item priority-low">
+                    <a href="/admin-notifications.html" class="page-link">알림 관리</a>
+                    <p class="page-description">텔레그램 및 이메일 알림 설정 관리</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 기술 및 테스트 페이지 -->
+        <div class="sitemap-section">
+            <h2 class="section-title">
+                <span class="section-icon">🔧</span>
+                기술 페이지
+            </h2>
+            <ul class="page-list">
+                <li class="page-item priority-low">
+                    <a href="/telegram-test.html" class="page-link">텔레그램 테스트</a>
+                    <p class="page-description">텔레그램 봇 연동 테스트 페이지</p>
+                </li>
+                <li class="page-item priority-low">
+                    <a href="/google185132f8a67f7e84.html" class="page-link">구글 검증</a>
+                    <p class="page-description">구글 서치 콘솔 소유권 확인 파일</p>
+                </li>
+                <li class="page-item priority-medium">
+                    <a href="/sitemap.xml" class="page-link">XML 사이트맵</a>
+                    <p class="page-description">검색엔진용 XML 사이트맵 파일</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 서비스 특징 -->
+        <div class="sitemap-section">
+            <h2 class="section-title">
+                <span class="section-icon">✨</span>
+                주요 서비스 특징
+            </h2>
+            <ul class="page-list">
+                <li class="page-item priority-medium">
+                    <div class="page-link" style="cursor: default;">회원가입 없는 간편 신청</div>
+                    <p class="page-description">복잡한 회원가입 과정 없이 바로 백링크 신청 가능</p>
+                </li>
+                <li class="page-item priority-medium">
+                    <div class="page-link" style="cursor: default;">95% 이상 인덱싱 보장</div>
+                    <p class="page-description">실제 검색엔진이 인식하는 고품질 백링크만 제공</p>
+                </li>
+                <li class="page-item priority-medium">
+                    <div class="page-link" style="cursor: default;">3일 내 작업 완료</div>
+                    <p class="page-description">신속하고 정확한 백링크 작업 프로세스</p>
+                </li>
+                <li class="page-item priority-medium">
+                    <div class="page-link" style="cursor: default;">SEO 전문가 직접 검수</div>
+                    <p class="page-description">10년 이상 경험의 전문가가 모든 백링크 품질 보장</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="back-to-home">
+            <a href="/" class="back-button">🏠 홈페이지로 돌아가기</a>
+        </div>
+    </div>
+</body>
+</html>

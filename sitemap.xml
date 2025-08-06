@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- 메인 페이지 -->
+    <url>
+        <loc>https://backlink-two.vercel.app/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- 상품 섹션 -->
+    <url>
+        <loc>https://backlink-two.vercel.app/#products</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 프로필 백링크 상품들 -->
+    <url>
+        <loc>https://backlink-two.vercel.app/#profile-backlinks</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 웹2.0 백링크 상품들 -->
+    <url>
+        <loc>https://backlink-two.vercel.app/#web20-backlinks</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 도메인 권한 상승 상품들 -->
+    <url>
+        <loc>https://backlink-two.vercel.app/#domain-authority</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 프로그램 백링크 상품들 -->
+    <url>
+        <loc>https://backlink-two.vercel.app/#program-backlinks</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 관리자 페이지 (검색엔진에서 제외하려면 robots.txt에서 차단) -->
+    <url>
+        <loc>https://backlink-two.vercel.app/admin</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.1</priority>
+    </url>
+
+    <!-- 관리자 알림 페이지 -->
+    <url>
+        <loc>https://backlink-two.vercel.app/admin-notifications.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.1</priority>
+    </url>
+
+    <!-- 텔레그램 테스트 페이지 -->
+    <url>
+        <loc>https://backlink-two.vercel.app/telegram-test.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.1</priority>
+    </url>
+
+    <!-- 구글 검증 파일 -->
+    <url>
+        <loc>https://backlink-two.vercel.app/google185132f8a67f7e84.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+
+</urlset>

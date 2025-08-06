@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# 관리자 페이지는 검색엔진에서 제외
+Disallow: /admin
+Disallow: /admin-notifications.html
+Disallow: /telegram-test.html
+Disallow: /data/
+
+# 사이트맵 위치
+Sitemap: https://backlink-two.vercel.app/sitemap.xml
+Sitemap: https://backlink-two.vercel.app/sitemap.html
+
+# 크롤링 속도 조절 (선택사항)
+Crawl-delay: 1
